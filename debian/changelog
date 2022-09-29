@@ -1,0 +1,118 @@
+funcparserlib (1.0.0.1-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Kouhei Maeda <mkouhei@palmtb.net>  Mon, 04 Jul 2022 23:18:32 -0400
+
+funcparserlib (1.0.0.1-1) unstable; urgency=medium
+
+  * update to upstream version 1.0.0.
+
+ -- wangxiangyu <wangxiangyu@uniontech.com>  Tue, 05 Jul 2022 9:54:32 +0900
+
+funcparserlib (0.3.6+dfsg1-1) unstable; urgency=medium
+
+  * Remove DFSG incompatible file (Closes: #982380).
+  * debian/control
+    - Bumps Standards-Version to 4.5.1.
+    - Build-Depends
+      * Changes debhelper to debhelper-compat.
+        - Removes debian/compat
+  * debian/copyright
+    - Appends Files-Excluded dfsg-incompatible documentation files
+    - Fixes insercure-uri.
+  * debian/watch
+    - Fixes debian-watch-uses-insecure-uri.
+    - Bumps version to 4.
+    - Appends dversionmangle, repacksuffix.
+
+ -- Kouhei Maeda <mkouhei@palmtb.net>  Sat, 13 Feb 2021 13:47:32 +0900
+
+funcparserlib (0.3.6-7.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop python2 support; Closes: #936569
+
+ -- Sandro Tosi <morph@debian.org>  Thu, 24 Oct 2019 18:10:51 -0400
+
+funcparserlib (0.3.6-7) unstable; urgency=medium
+
+  * debian/control
+    - Standards-Version: Bumps version to 3.9.8.
+    - Homepage: Fixes obsolete-url-in-packaging.
+
+ -- Kouhei Maeda <mkouhei@palmtb.net>  Sat, 02 Jul 2016 07:01:57 +0900
+
+funcparserlib (0.3.6-6) unstable; urgency=medium
+
+  * Uploading to unstable. 
+
+ -- Kouhei Maeda <mkouhei@palmtb.net>  Wed, 01 Jul 2015 13:38:28 +0900
+
+funcparserlib (0.3.6-5) experimental; urgency=medium
+
+  * debian/watch
+    - Changed uri by pypi.debian.net.
+
+ -- Kouhei Maeda <mkouhei@palmtb.net>  Sat, 18 Apr 2015 19:02:55 +0900
+
+funcparserlib (0.3.6-4) unstable; urgency=medium
+
+  * debian/watch
+    - Fixed uri scheme http:// to https://.
+
+ -- Kouhei Maeda <mkouhei@palmtb.net>  Thu, 16 Oct 2014 22:05:09 +0900
+
+funcparserlib (0.3.6-3) unstable; urgency=medium
+
+  * debian/control
+    - Standards-Version: Bump version to 3.9.6. 
+    - Build-Depends: Appended dh-python.
+    - X-Python-Version: Removed >=3.2.
+    - Added X-Python3-Version: >=3.2.
+  * debian/copyright
+    - Fixed space-in-std-shortname-in-dep5-copyright. 
+  * debian/rules
+    - Changed using pybuild.
+    - Removed override_dh_auto_build, override_dh_auto_test,
+      override_dh_auto_install, override_dh_auto_clean.
+  * debian/patches
+    - Removed update_egg-info.
+
+ -- Kouhei Maeda <mkouhei@palmtb.net>  Wed, 15 Oct 2014 10:03:30 +0900
+
+funcparserlib (0.3.6-2) unstable; urgency=low
+
+  * Fixes wrong-name-for-upstream-changelog 
+    - debian/rules: Append override_dh_installchangelogs
+    - debian/docs: Remove CHANGES
+
+ -- Kouhei Maeda <mkouhei@palmtb.net>  Tue, 02 Jul 2013 09:46:04 +0900
+
+funcparserlib (0.3.6-1) unstable; urgency=low
+
+  * New upstream release
+  * Support python3
+
+ -- Kouhei Maeda <mkouhei@palmtb.net>  Sat, 08 Jun 2013 08:25:21 +0900
+
+funcparserlib (0.3.5-2) unstable; urgency=low
+
+  * Update Standards-Version in debian/control 
+
+ -- Kouhei Maeda <mkouhei@palmtb.net>  Tue, 05 Jun 2012 09:14:05 +0900
+
+funcparserlib (0.3.5-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+    Acked by Maintainer.
+  * Fixes FTBFS on python 2.7. (Closes: #646645)
+    Update the data of the test result from upsream HG:788599d92a85.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Fri, 02 Mar 2012 13:58:34 +0900
+
+funcparserlib (0.3.5-1) unstable; urgency=low
+
+  * Initial release (Closes: #626705)
+
+ -- Kouhei Maeda <mkouhei@palmtb.net>  Sun, 18 Sep 2011 07:43:30 +0900
